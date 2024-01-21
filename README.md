@@ -1,2 +1,2 @@
-#  novaia-computing.github.io
-Novaia website.
+# novaia.github.io
+Novaia's website.
