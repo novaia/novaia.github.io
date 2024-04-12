@@ -16,23 +16,78 @@
         body {
             font-family: 'Red Hat Mono', monospace;
             text-align: center;
+            text-decoration-skip-ink: none;
+        }
+        .body-column {
+            margin: 0 auto;
+            max-width: 800px;
         }
         h1 {
             padding-bottom: 0;
             margin-bottom: 0;
+        }
+        h2 {
+            margin-bottom: 0;
+            padding-bottom: 7px;
+            font-weight: 800;
         }
         #container {
             width: 250px;
             height: 250px;
             margin: 0 auto;
         }
+        table { 
+            margin: 0 auto; 
+            border-collapse: collapse; 
+            width: 100%; 
+        } 
+        th, td { 
+            padding: 8px; 
+            text-align: left; 
+            border-bottom: 1px solid #ddd; 
+        } 
+        th { 
+            background-color: #f2f2f2; 
+        }
+        a, a:visited {
+            color: blue;
+            line-height: 2;
+        }
+        section {
+            margin-top: 30px;
+        }
     </style>
 </head>
 <body>
-    <h1>Novaia</h1>
-    <div id="container"></div>
-    <p>Generative AI for a three dimensional world.</p>
-    <p><a href="https://github.com/novaia">GitHub</a> <a href="https://huggingface.co/novaia">HuggingFace</a> <a href="https://twitter.com/NovaiaComputing">Twitter</a></p>
+    <div class="body-column">
+        <h1>Novaia</h1>
+        <div id="container"></div>
+        <p>Generative AI for a three dimensional world.</p>
+
+        <section>
+            <h2>Releases</h2>
+            <table>
+                <thead> 
+                    <tr><th>Project Name</th> <th>Type</th> </tr> 
+                </thead> 
+                <tbody> 
+                    <tr> 
+                        <td><a href="https://github.com/novaia/ntg">Neural Terrain Generation (NTG)</a></td> 
+                        <td>Code</td> 
+                    </tr> 
+                    <tr> 
+                        <td><a href="https://github.com/novaia/ntg-unity">NTG Unity</a></td> 
+                        <td>Code</td> </tr> 
+                </tbody> 
+            </table>
+        </section>
+        <section>
+            <h2>Links</h2>
+            <a href="https://github.com/novaia">GitHub</a> |
+            <a href="https://huggingface.co/novaia">HuggingFace</a> |
+            <a href="https://twitter.com/NovaiaComputing">Twitter</a>
+        </section>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script>
         var scene = new THREE.Scene();
